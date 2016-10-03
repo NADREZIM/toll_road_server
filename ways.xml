@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<st3:journey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:st3="http://nure.ua/borisov/SummaryTask3/task1.process.service.dataAccess.entity"
+            xsi:schemaLocation="http://nure.ua/borisov/SummaryTask3/task1.process.service.dataAccess.entity waysSchema.xsd">
+
+    <pointOfJourney>
+        <st3:startPoint>1</st3:startPoint>
+        <st3:endPoint>2</st3:endPoint>
+        <st3:fare>20.50</st3:fare>
+    </pointOfJourney>
+
+    <pointOfJourney>
+        <st3:startPoint>2</st3:startPoint>
+        <st3:endPoint>3</st3:endPoint>
+        <st3:fare>21.50</st3:fare>
+    </pointOfJourney>
+
+    <pointOfJourney>
+        <st3:startPoint>3</st3:startPoint>
+        <st3:endPoint>4</st3:endPoint>
+        <st3:fare>22.50</st3:fare>
+    </pointOfJourney>
+
+    <pointOfJourney>
+        <st3:startPoint>4</st3:startPoint>
+        <st3:endPoint>5</st3:endPoint>
+        <st3:fare>23.50</st3:fare>
+    </pointOfJourney>
+
+    <pointOfJourney>
+        <st3:startPoint>5</st3:startPoint>
+        <st3:endPoint>6</st3:endPoint>
+        <st3:fare>24.50</st3:fare>
+    </pointOfJourney>
+
+    <pointOfJourney>
+        <st3:startPoint>6</st3:startPoint>
+        <st3:endPoint>7</st3:endPoint>
+        <st3:fare>25.50</st3:fare>
+    </pointOfJourney>
+
+    <pointOfJourney>
+        <st3:startPoint>7</st3:startPoint>
+        <st3:endPoint>8</st3:endPoint>
+        <st3:fare>26.50</st3:fare>
+    </pointOfJourney>
+
+    <pointOfJourney>
+        <st3:startPoint>8</st3:startPoint>
+        <st3:endPoint>9</st3:endPoint>
+        <st3:fare>27.50</st3:fare>
+    </pointOfJourney>
+
+    <pointOfJourney>
+        <st3:startPoint>9</st3:startPoint>
+        <st3:endPoint>10</st3:endPoint>
+        <st3:fare>28.50</st3:fare>
+    </pointOfJourney>
+
+    <pointOfJourney>
+        <st3:startPoint>10</st3:startPoint>
+        <st3:endPoint>1</st3:endPoint>
+        <st3:fare>29.50</st3:fare>
+    </pointOfJourney>
+
+    </st3:journey>

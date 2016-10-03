@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://nure.ua/borisov/SummaryTask3/task1.process.service.dataAccess.entity"
+            xmlns:tns="http://nure.ua/borisov/SummaryTask3/task1.process.service.dataAccess.entity">
+
+    <xsd:element name="startPoint" type="xsd:integer"/>
+    <xsd:element name="endPoint" type="xsd:integer"/>
+    <xsd:element name="fare" type="xsd:double"/>
+
+    <xsd:element name="journey">
+    <xsd:complexType>
+        <xsd:sequence minOccurs="1" maxOccurs="10">
+            <xsd:element name="pointOfJourney" type="tns:way"/>
+                </xsd:sequence>
+            </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="way">
+        <xsd:sequence>
+        <xsd:element ref="tns:startPoint"/>
+        <xsd:element ref="tns:endPoint"/>
+        <xsd:element ref="tns:fare"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>
