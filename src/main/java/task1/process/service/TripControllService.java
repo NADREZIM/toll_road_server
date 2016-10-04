@@ -11,11 +11,16 @@ import task1.webAccess.ClientData;
 
 import java.util.Date;
 
-/**
- * Created by User on 03.10.2016.
- */
+
 public class TripControllService {
     private static final Logger logger = Logger.getLogger(TripControllService.class);
+
+    /**
+     * @author - Borisov Artem
+     * @param data - information about the start and end points which some user want to overcome.
+     * this info is comes from the client side.
+
+     */
     public void addWayPoint(ClientData data){
         DBWrapper wrapper = new MongoDBWrapper();
         Way way = WayStorage.getResource(new Way(data.getStartPoint(), data.getEndPoint()));

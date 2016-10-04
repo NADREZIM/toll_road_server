@@ -23,6 +23,11 @@ import java.util.Locale;
 public class MongoDBWrapper implements DBWrapper {
     private static final Logger logger = Logger.getLogger(MongoDBWrapper.class);
     @Override
+    /**
+     * @author - Borisov Artem
+     * @param ordinalNumber - user ordinal number in data base
+     * @return - <User> object which is fulfilled with  fields from the data base
+     */
     public User getUser(int ordinalNumber) {
         BasicDBObject query = new BasicDBObject();
         query.put("ordinalNumber", ordinalNumber);
@@ -73,7 +78,11 @@ public class MongoDBWrapper implements DBWrapper {
        logger.info("necessary user is: "+ user);
         return user;
     }
-
+    /**
+     * @author - Borisov Artem
+     * @param ordinalNumber - user ordinal number in data base
+     * @param way - object with a startPoint and endPoint parameters
+     */
     @Override
     public void updateUser(final int ordinalNumber, Way way) {
         DBInitializer.getDataBase().getCollection("user").updateOne(

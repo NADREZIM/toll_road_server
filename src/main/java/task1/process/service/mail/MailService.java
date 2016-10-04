@@ -10,9 +10,7 @@ import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-/**
- * Created by User on 03.10.2016.
- */
+
 public class MailService {
     private static final Logger logger = Logger.getLogger(MailService.class);
     public void sendEmailMessage(User user){

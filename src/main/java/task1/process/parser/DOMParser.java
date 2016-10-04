@@ -24,6 +24,11 @@ public class DOMParser {
         this.xmlFileName = xmlFileName;
     }
 
+    /**
+     * @author - Borisov Artem
+     * @return - <Way> objects list. Each of them have full filled fields
+     * @throws ParserConfigurationException, SAXException, IOException
+     */
     public List<Way> parse() throws ParserConfigurationException, SAXException, IOException {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
@@ -55,6 +60,12 @@ public class DOMParser {
         return wayList;
     }
 
+    /**
+     * @author - Borisov Artem
+     * param nodeElement - required node in xml document
+     * param tagName - mane of the tag in node element
+     * @return - tag value in the document
+     */
     private String findValueForTagName(Node nodeElement, String tagName) {
         String res = null;
         if (nodeElement != null) {
